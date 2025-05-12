@@ -3,37 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JavaScript & DOM Manipulation</title>
+  <title>Interactive Webpage with JS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Semantic Header -->
-  <header>
-    <h1>Welcome to My Page</h1>
-  </header>
+  <h1>Welcome to My Interactive Page</h1>
 
-  <!-- Main Content Section -->
-  <main>
-    <section>
-      <p id="demo-text">This is some sample text.</p>
-      <button id="change-text-btn">Change Text</button>
-    </section>
+  <!-- Change Text Section -->
+  <button id="changeTextBtn">Change Message</button>
+  <div id="message">Original message here.</div>
 
-    <section>
-      <h2>Change Background Color</h2>
-      <input type="color" id="color-picker" />
-    </section>
+  <!-- Change Style Section -->
+  <h2>Change Background Color</h2>
+  <input type="color" id="colorPicker" value="#ffffff" />
 
-    <section>
-      <h2>Dynamic Element Example</h2>
-      <div id="element-container"></div>
-      <button id="add-element-btn">Add Element</button>
-      <button id="remove-element-btn">Remove Element</button>
-    </section>
-  </main>
+  <!-- Add/Remove Element Section -->
+  <h2>Dynamic Element</h2>
+  <button id="addElementBtn">Add Paragraph</button>
+  <button id="removeElementBtn">Remove Paragraph</button>
+  <div id="container"></div>
 
-  <!-- Link to external JavaScript -->
+  <!-- JavaScript at the end of body -->
   <script src="script.js"></script>
 </body>
 </html>
